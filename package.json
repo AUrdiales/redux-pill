@@ -1,0 +1,25 @@
+{
+  "name": "redux-101",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "101": "ts-node src/101",
+    "standalone": "lite-server src/standalone --config=./lite-server.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "lite-server": "^2.5.4",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/node": "^12.11.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
