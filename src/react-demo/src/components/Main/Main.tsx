@@ -1,11 +1,5 @@
 import React, { useState, ChangeEvent } from "react";
-import {
-  Typography,
-  makeStyles,
-  createStyles,
-  Tabs,
-  Tab
-} from "@material-ui/core";
+import { makeStyles, createStyles, Tabs, Tab } from "@material-ui/core";
 import { useSelector } from "react-redux";
 import InformationPage from "../InformationPage/InformationPage";
 import ExercisesPage from "../ExercisesPage/ExercisesPage";
@@ -31,10 +25,6 @@ const Main = () => {
   };
   return (
     <div className={classes.root}>
-      <Typography component="p" variant="body1">
-        Welcome to the redux pill
-      </Typography>
-
       <Tabs value={currentStep} onChange={handleChange}>
         <Tab value="actions" label="actions" />
         <Tab value="reducers" label="reducers" />

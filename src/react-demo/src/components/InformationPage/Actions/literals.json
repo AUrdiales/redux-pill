@@ -1,0 +1,11 @@
+{
+  "primaryText": "The actions are the data payloads",
+  "secondaryText": "These are basically an object with a {TYPE} property that is mandatory and a {PAYLOAD} property that is optional",
+  "features": [
+    "The {TYPE} should be a constant in the same file as the actions or in a action types file.",
+    "Action creators are functions that return an action",
+    "Never use Actions standalone always make action creators",
+    "A community convention and a good way to handle the payload of the action is to use a {PAYLOAD} named property"
+  ],
+  "snippets": "These are the snippets that I use to look when I work with a action in redux:"
+}

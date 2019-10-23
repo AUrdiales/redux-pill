@@ -57,8 +57,9 @@ const Store = () => {
               fontSize={14}
               showPrintMargin={true}
               showGutter={true}
-              highlightActiveLine={true}
+              highlightActiveLine={false}
               value={hooksMd}
+              readOnly
             />
           </Grid>
           <Grid item md>
@@ -72,8 +73,9 @@ const Store = () => {
               fontSize={14}
               showPrintMargin={true}
               showGutter={true}
-              highlightActiveLine={true}
+              highlightActiveLine={false}
               value={classMd}
+              readOnly
             />
           </Grid>
         </Grid>
