@@ -3,7 +3,8 @@
     "module": "commonjs",
     "declaration": false,
     "moduleResolution": "node",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "noImplicitAny": false
   },
   "include": ["**/*.ts"]
 }
