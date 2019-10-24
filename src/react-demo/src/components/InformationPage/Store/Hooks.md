@@ -6,6 +6,10 @@ export function createStore() {
     return createReduxStore(mainReducer, {});
 }
 
+const store = createStore();
+console.log(store.getState());
+
+// usage with react hooks
 const MyComponent = () => {
     const store = useStore();
 

@@ -6,6 +6,10 @@ export function createStore() {
     return createReduxStore(mainReducer, {});
 }
 
+const store = createStore();
+console.log(store.getState());
+
+// usage with react class
 class MyComponent extends Component {
     render() {
         return <div>{localState}</div>;
