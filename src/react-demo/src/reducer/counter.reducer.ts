@@ -1,4 +1,7 @@
-function counterReducer(state = 0, action) {
+export function counterReducer(
+  state = 0,
+  action: { type: string; payload: any }
+) {
   switch (action.type) {
     case "INCREMENT":
       return state + 1;
@@ -10,7 +13,3 @@ function counterReducer(state = 0, action) {
       return state;
   }
 }
-
-const reducer = Redux.combineReducers({
-  counter: counterReducer
-});
