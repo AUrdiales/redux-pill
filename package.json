@@ -6,6 +6,7 @@
   "scripts": {
     "101": "ts-node src/101",
     "standalone": "lite-server src/standalone --config=./lite-server.json",
+    "react": "cd src/react-demo && yarn start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

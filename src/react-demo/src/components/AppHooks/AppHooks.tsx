@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { Typography, Grid, Button } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -8,9 +8,9 @@ const buttonStyle = { margin: 10 };
 export function AppHooks() {
   const counter = useSelector((state: any) => state.counter);
   const dispatch = useDispatch();
-  const incrementAction = useCallback(() => dispatch(increment()), [dispatch]);
-  const decrementAction = useCallback(() => dispatch(decrement()), [dispatch]);
-  const resetAction = useCallback(() => dispatch(reset()), [dispatch]);
+  const incrementAction = () => dispatch(increment());
+  const decrementAction = () => dispatch(decrement());
+  const resetAction = () => dispatch(reset());
   return (
     <Grid container style={{ margin: 10 }} direction="column">
       <Grid item>
